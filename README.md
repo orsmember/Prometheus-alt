@@ -1,1 +1,2 @@
-# Prometheus-alt
+# Prometheus
+Project Prometheus
