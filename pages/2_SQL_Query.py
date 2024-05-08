@@ -65,7 +65,7 @@ with st.sidebar:
             """)
 
 
-from llama_index import SQLDatabase, ServiceContext
+from llama_index.core import SQLDatabase, ServiceContext
 from llama_index.llms import OpenAI
 llm = OpenAI(temperature=0, model="text-davinci-002")
 service_context = ServiceContext.from_defaults(llm=llm)
@@ -115,7 +115,7 @@ st.subheader("AI Assistant `SQL Queries in plan English`")
 
 
 
-from llama_index import SQLStructStoreIndex, SQLDatabase, VectorStoreIndex
+from llama_index.core import SQLStructStoreIndex, SQLDatabase, VectorStoreIndex
 from llama_index.indices.struct_store import SQLContextContainerBuilder
 
 # build a vector index from the table schema information
