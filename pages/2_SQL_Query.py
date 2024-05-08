@@ -115,7 +115,8 @@ st.subheader("AI Assistant `SQL Queries in plan English`")
 
 
 
-from llama_index.core import SQLStructStoreIndex, SQLDatabase, VectorStoreIndex
+from llama_index.core import SQLDatabase, VectorStoreIndex
+from llama_index.indices.struct_store.sql import SQLStructStoreIndex
 from llama_index.indices.struct_store import SQLContextContainerBuilder
 
 # build a vector index from the table schema information
