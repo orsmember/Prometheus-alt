@@ -66,7 +66,7 @@ with st.sidebar:
 
 
 from llama_index.core import SQLDatabase, ServiceContext
-from llama_index.llms import OpenAI
+from llama_index.llms.openai import OpenAI
 llm = OpenAI(temperature=0, model="text-davinci-002")
 service_context = ServiceContext.from_defaults(llm=llm)
 sql_database = SQLDatabase(engine, include_tables=["accounts"])
