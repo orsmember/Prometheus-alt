@@ -7,7 +7,9 @@ Created on Fri Jul 28 09:13:38 2023
 
 import streamlit as st
 from streamlit_pills import pills
-from llama_index import SimpleDirectoryReader, GPTVectorStoreIndex, ServiceContext
+#from llama_index import SimpleDirectoryReader, GPTVectorStoreIndex, ServiceContext
+from llama_index.core import SimpleDirectoryReader, GPTVectorStoreIndex, ServiceContext
+
 from pathlib import Path
 import os
 import openai
