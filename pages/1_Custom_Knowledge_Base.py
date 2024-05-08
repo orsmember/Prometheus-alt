@@ -13,7 +13,8 @@ from llama_index.core import SimpleDirectoryReader, GPTVectorStoreIndex, Service
 from pathlib import Path
 import os
 import openai
-from llama_index import StorageContext, load_index_from_storage
+#from llama_index import StorageContext, load_index_from_storage
+from llama_index.core import StorageContext, load_index_from_storage
 
 openai.api_key = os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
